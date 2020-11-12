@@ -1,0 +1,7 @@
+name = "Autopilot++"
+globalVariableName = "autopilot_pp"
+shortName = "app"
+crxName = "gefs_gc-setup"
+
+[requirejs]
+mainConfigFile = "source/ui/main.js"

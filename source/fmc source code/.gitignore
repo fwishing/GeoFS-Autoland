@@ -1,0 +1,11 @@
+.DS_Store
+node_modules
+build
+compile/data
+compile/compiled-data
+package
+*.pem
+._*
+.idea
+*.log
+package-lock.json

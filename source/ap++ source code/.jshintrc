@@ -1,0 +1,60 @@
+{ "globals":
+  { "geofs": false
+  , "V3": false
+  , "M33": false
+  , "camera": false
+  , "PAGE_PATH": false
+  , "M3": false
+  , "V2": false
+  , "instruments": false
+  , "Overlay": false
+  , "flight": false
+  , "weather": false
+  , "ui": false
+  , "objects": false
+  , "multiplayer": false
+  , "audio": false
+  , "controls": false
+  , "rigidBody": false
+  , "Indicator": false
+  , "Aircraft": false
+  , "Object3D": false
+  , "metersToLocalLat": false
+  , "meridionalRadius": false
+  , "airDensitySL": false
+  , "minDragCoef": false
+  , "dragConstant": false
+  , "GRAVITY": false
+  , "viewportReferenceWidth": false
+  , "viewportReferenceHeight": false
+  , "xyz2lla": false
+  , "lla2xyz": false
+  , "xy2ll": false
+  , "ll2xy": false
+  , "llaDistance": false
+  , "intersect_RayTriangle": false
+  , "getBuildingCollision": false
+  , "majorRunwayGrid": false
+  , "define": false
+  , "require": false
+  , "Map": false
+  , "Set": false
+  , "DEBUG": true
+  }
+, "laxcomma": true
+, "laxbreak": true
+, "eqeqeq": true
+, "strict": "global"
+, "unused": "strict"
+, "curly": false
+, "browser": true
+, "jquery": true
+, "devel": true
+, "debug": true
+, "validthis": true
+, "maxerr": 50
+, "-W058": false
+, "-W002": false
+, "-W004": false
+, "maxlen": 99
+}

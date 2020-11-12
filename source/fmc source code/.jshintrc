@@ -1,0 +1,21 @@
+{ "globals": { "module": true }
+, "node": true
+, "predef": [ "-Promise" ]
+, "varstmt": true
+, "esnext": 6
+, "laxcomma": true
+, "laxbreak": true
+, "multistr": true
+, "eqeqeq": true
+, "smarttabs": true
+, "curly": false
+, "expr": true
+, "devel": true
+, "debug": true
+, "funcscope": false
+, "unused": true
+, "bitwise": true
+, "-W058": false
+, "-W002": false
+, "-W004": false
+}

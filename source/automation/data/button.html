@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Button</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Text&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline+Text:wght@600&display=swap');
+      #top {
+        margin-bottom: 5px;
+      }
+
+      .button {
+        background-color: #3498DB;
+        transition-duration: 0.4s;
+        color: white;
+        border: none;
+        font-family: Big Shoulders Stencil Text;
+        font-size: 20px;
+      }
+
+      .button:hover {
+        background-color: white; /* Green */
+        color: #3498DB;
+      }
+
+      .running {
+        background-color: #236a99;
+        transition-duration: 0.4s;
+        color: white;
+        border: none;
+        font-family: Big Shoulders Stencil Text;
+        font-size: 20px;
+      }
+
+      .running:hover {
+        background-color: white; /* Green */
+        color: #3498DB;
+      }
+
+      /* Dropdown Button */
+      .dropbtn {
+        background-color: #3cde95;
+        font-family: Big Shoulders Inline Text;
+        color: white;
+        padding: 16px;
+        font-size: 20px;
+        border: none;
+        cursor: pointer;
+        border-radius: 8px;
+        transition-duration: 0.4s;
+      }
+
+        /* Dropdown button on hover & focus */
+        .dropbtn:hover, .dropbtn:focus {
+          background-color: white;
+          color: #3cde95;
+        }
+
+        /* The container <div> - needed to position the dropdown content */
+          .dropdown {
+            position: relative;
+            display: inline-block;
+          }
+
+          /* Dropdown Content (Hidden by Default) */
+          .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f1f1f1;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+          }
+
+          /* Links inside the dropdown */
+          .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+          }
+
+          /* Change color of dropdown links on hover */
+          .dropdown-content a:hover {background-color: #ddd}
+
+          /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+          .show {display:block;}
+        </style>
+      </head>
+    <body>
+      <div class="dropdown">
+        <button onClick="dropdown()" class="dropbtn">Addons</button>
+        <div id="myDropdown" class="dropdown-content">
+          <button class="button" id="top" onclick="flipautomation()">Automation</button>
+          <button class="button" id="top" onclick="flipsoundpackage()">Sound Package</button>
+          <button class="button">FMC will go here later</button>
+        </div>
+        </div>
+        <script type="text/javascript">
+          let automationrunning = 0
+          let soundpackagerunning = 0
+          /* When the user clicks on the button,
+          toggle between hiding and showing the dropdown content */
+            function dropdown() {
+              document.getElementById("myDropdown").classList.toggle("show");
+            }
+            // Close the dropdown menu if the user clicks outside of it
+            window.onclick = function(event) {
+              if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                  var openDropdown = dropdowns[i];
+                  if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                  }
+                }
+              }
+            }
+            function automation() {
+              console.log("automation");
+            }
+            function soundpackage() {
+              console.log("soundpackage");
+            }
+            function flipautomation() {
+              automationrunning ^= true;
+            }
+            function flipsoundpackage() {
+              soundpackagerunning ^= true;
+            }
+            if (automationrunning=1) {
+              automation()
+            }
+          </script>
+        </body>
+</html>

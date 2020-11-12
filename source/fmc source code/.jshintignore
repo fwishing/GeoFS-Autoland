@@ -1,0 +1,11 @@
+LICENSE
+.gitignore
+.jshintrc
+*.json
+*.md
+*.html
+*.css
+*.log
+node_modules/*
+build/*
+package/*

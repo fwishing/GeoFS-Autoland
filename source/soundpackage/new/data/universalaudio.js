@@ -4,4 +4,5 @@ function universalAudio(base64,ms) {
   audio.play()
   pause(ms)
 }
-// universalAudio(base64,ms)
+/* universalAudio(base64,ms)
+return */

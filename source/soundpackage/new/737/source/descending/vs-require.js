@@ -1,3 +1,3 @@
-if (/*vs<0*/) {
-
+if (geofs.animation.values.climbrate<0) {
+  
 }

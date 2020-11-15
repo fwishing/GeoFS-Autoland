@@ -18,18 +18,26 @@ window.onclick = function(event) {
     }
   }
 }
-function automation() {
-  console.log("automation");
-}
-function soundpackage() {
-  console.log("soundpackage");
-}
-function flipautomation() {
-  automationrunning ^= true;
-}
-function flipsoundpackage() {
-  soundpackagerunning ^= true;
+function flip(vari) {
+  vari ^= true;
 }
 if (automationrunning=1) {
-  automation()
+  function() {
+    console.log("automation");
+    document.getElementById("automation").classList.add("running");
+  }
+} else {
+  function() {
+    document.getElementById("automation").classList.remove("running");
+  }
+}
+if (soundpackagerunning=1) {
+  function() {
+    console.log("soundpackage");
+    document.getElementById("soundpackage").classList.add("running");
+  }
+} else {
+  function() {
+    document.getElementById("automation").classList.remove("running");
+  }
 }

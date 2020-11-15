@@ -6,10 +6,12 @@
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Text&display=swap');
       @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline+Text:wght@600&display=swap');
-      #top {
+      #automation {
         margin-bottom: 5px;
       }
-
+      #soundpackage {
+        margin-bottom: 5px;
+      }
       .button {
         background-color: #3498DB;
         transition-duration: 0.4s;
@@ -88,51 +90,59 @@
           .show {display:block;}
         </style>
       </head>
-    <body>
-      <div class="dropdown">
-        <button onClick="dropdown()" class="dropbtn">Addons</button>
-        <div id="myDropdown" class="dropdown-content">
-          <button class="button" id="top" onclick="flipautomation()">Automation</button>
-          <button class="button" id="top" onclick="flipsoundpackage()">Sound Package</button>
-          <button class="button">FMC will go here later</button>
-        </div>
-        </div>
-        <script type="text/javascript">
-          let automationrunning = 0
-          let soundpackagerunning = 0
-          /* When the user clicks on the button,
-          toggle between hiding and showing the dropdown content */
-            function dropdown() {
-              document.getElementById("myDropdown").classList.toggle("show");
-            }
-            // Close the dropdown menu if the user clicks outside of it
-            window.onclick = function(event) {
-              if (!event.target.matches('.dropbtn')) {
-                var dropdowns = document.getElementsByClassName("dropdown-content");
-                var i;
-                for (i = 0; i < dropdowns.length; i++) {
-                  var openDropdown = dropdowns[i];
-                  if (openDropdown.classList.contains('show')) {
-                    openDropdown.classList.remove('show');
-                  }
+  <body>
+    <div class="dropdown">
+      <button onClick="dropdown()" class="dropbtn">Addons</button>
+      <div id="myDropdown" class="dropdown-content">
+        <button class="button" id="automation" onclick="flipautomation()">Automation</button>
+        <button class="button" id="soundpackage" onclick="flipsoundpackage()">Sound Package</button>
+        <button class="button">FMC will go here later</button>
+      </div>
+      </div>
+      <script type="text/javascript">
+        let automationrunning = 0
+        let soundpackagerunning = 0
+        /* When the user clicks on the button,
+        toggle between hiding and showing the dropdown content */
+          function dropdown() {
+            document.getElementById("myDropdown").classList.toggle("show");
+          }
+          // Close the dropdown menu if the user clicks outside of it
+          window.onclick = function(event) {
+            if (!event.target.matches('.dropbtn')) {
+              var dropdowns = document.getElementsByClassName("dropdown-content");
+              var i;
+              for (i = 0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains('show')) {
+                  openDropdown.classList.remove('show');
                 }
               }
-            }
-            function automation() {
+          }
+          }
+          function flip(vari) {
+            vari ^= true;
+          }
+          if (automationrunning=1) {
+            function() {
               console.log("automation");
+              document.getElementById("automation").classList.add("running");
             }
-            function soundpackage() {
+          } else {
+            function() {
+              document.getElementById("automation").classList.remove("running");
+            }
+          }
+          if (soundpackagerunning=1) {
+            function() {
               console.log("soundpackage");
+              document.getElementById("soundpackage").classList.add("running");
             }
-            function flipautomation() {
-              automationrunning ^= true;
+          } else {
+            function() {
+              document.getElementById("automation").classList.remove("running");
             }
-            function flipsoundpackage() {
-              soundpackagerunning ^= true;
-            }
-            if (automationrunning=1) {
-              automation()
-            }
-          </script>
-        </body>
+          }
+        </script>
+      </body>
 </html>

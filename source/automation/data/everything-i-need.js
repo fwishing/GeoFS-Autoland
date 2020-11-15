@@ -1,8 +1,14 @@
 // Gear
-controls.setters.setGear['set'](value);
-// value is 0 for down, 1 for up
+function gear(val) {
+  controls.setters.setGear['set'](val);
+}
+// val is 0 for down, 1 for up
 
 // Flaps
-controls.setters.setFlapsDown['set'](value);
-controls.setters.setFlapsUp['set'](value);
-// value can be found at geofs.aircraft.instance.definition.flapsPositions
+function flapsUp(val) {
+  controls.setters.setFlapsUp['set'](val);
+}
+function flapsDown() {
+  controls.setters.setFlapsDown['set'](val);
+}
+// val can be found at geofs.aircraft.instance.definition.flapsPositions

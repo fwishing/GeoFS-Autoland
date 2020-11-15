@@ -22,20 +22,11 @@ function setup() {
     // set up the sleep function
     return new Promise(resolve => setTimeout(resolve, ms));
   }
-  function unoAudio(base64,ms) {
+  function universalAudio(base64,ms,B) {
     var audio=new Audio(base64)
     audio.loop=false
     audio.play()
-    sleep(ms).then(() => {
-      soundpackage()
-    });
-  };
-  function dosAudio(base64,ms,A,B) {
-    C=B-Math.abs((A*0.01)/60)
-    var audio=new Audio(base64)
-    audio.loop=false
-    audio.play()
-    sleep(ms).then(() => {
+    sleep(Math.ceil(ms/10)*10).then(() => {
       soundpackage()
     });
   };

@@ -1,7 +1,1 @@
-Bank angle when roll is over 55 degrees
-tcas test when engines are starting up
-too low gear when below 1500 AGL and descending and gear is not down
-stall when stalling
-minimums at 550 feet AGL
-GPWS at its AGL height
-approaching minimums at 1050 feet AGL
+GPWS, alarms, and sounds that make you feel like you're in a real plane

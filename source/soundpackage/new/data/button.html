@@ -107,7 +107,12 @@
 	}
 
 	function flip(n) {
-		n ^= !0
+  	if (n==0) {
+    	n=1
+  	} else {
+    	n=0
+  	}
+		console.log(n);
 	}
 	var automationrunning = 0,
 		soundpackagerunning = 0;

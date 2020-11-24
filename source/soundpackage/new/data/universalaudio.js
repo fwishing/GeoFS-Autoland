@@ -1,8 +1,7 @@
-function universalAudio(base64,ms) {
-  var audio="data:audio/mpeg;base64,"+base64
-  audio.loop=false
+function universalAudio(base64) {
+  var audio=new Audio("data:audio/mpeg;base64,"+base64)
   audio.play()
-  pause(ms)
 }
-/* universalAudio(base64,ms)
-return */
+
+universalAudio(parsed[aid].)
+return

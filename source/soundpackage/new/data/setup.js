@@ -1,8 +1,8 @@
 function setup() {
   // A is vertical speed, B is requested altitude
-  let A;
-  let B;
-  let C;
+  window.A=undefined
+  window.B=undefined
+  window.C=undefined
   function sleep(ms) {
     // set up the sleep function
     return new Promise(resolve => setTimeout(resolve, ms));

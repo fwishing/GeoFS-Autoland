@@ -1,5 +1,4 @@
-function update() {
-  var aid=parseInt(geofs.aircraft.instance.id)
-  var warning_keys = Object.keys(parsed.warnings)
-  var gpws_keys = Object.keys(parsed.approach)
-}
+aid=1/*parseInt(geofs.aircraft.instance.id)*/
+current_sounds = parsed[aid]
+warning_keys = Object.keys(parsed[aid].warnings)
+gpws_keys = Object.keys(parsed[aid].approach)

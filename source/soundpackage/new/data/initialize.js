@@ -1,9 +1,8 @@
-function initialize() {
-  var data
-  function defineJSON(url) {
-    fetch(url)
-      .then(res => res.json())
-      .then(data => parsed = data)
-  }
-  window.parsed=defineJSON('https://raw.githubusercontent.com/nicolas377/hosting/master/temp.json')
-}
+let parsed;
+fetch('https://raw.githubusercontent.com/nicolas377/hosting/master/temp.json')
+  .then(function(resp) {
+    return resp.json()
+  })
+  .then(function(data) {
+    parsed = data
+  })

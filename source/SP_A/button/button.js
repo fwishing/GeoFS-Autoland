@@ -3,8 +3,8 @@ function dropdown()
 	document.getElementById("myDropdown").classList.toggle("show")
 }
 
-var automationrunning = 0,
-	soundpackagerunning = 0;
+var automationrunning = 0;
+var soundpackagerunning = 0;
 window.onclick = function (n)
 {
 	if (!n.target.matches(".dropbtn"))
@@ -17,19 +17,28 @@ window.onclick = function (n)
 		}
 	}
 }
-if (automationrunning = 1)
-{
-	document.getElementById("automation").classList.add("running")
-}
-else
-{
-	document.getElementById("automation").classList.remove("running")
-}
-if (soundpackagerunning = 1)
-{
-	document.getElementById("soundpackage").classList.add("running")
-}
-else
-{
-	document.getElementById("automation").classList.remove("running")
-}
+setInterval(function() {
+	if (automationrunning == 1)
+	{
+		document.getElementById("automation").classList.add("running")
+		document.getElementById("automation").classList.remove("button")
+	}
+	else
+	{
+		document.getElementById("automation").classList.remove("running")
+		document.getElementById("automation").classList.add("button")
+	}
+	if (soundpackagerunning == 1)
+	{
+		document.getElementById("soundpackage").classList.add("running")
+		document.getElementById("automation").classList.remove("button")
+	}
+	else
+	{
+		document.getElementById("automation").classList.remove("running")
+		document.getElementById("automation").classList.add("button")
+	}
+	console.log("automation: "+automationrunning);
+	console.log("soundpackage: "+soundpackagerunning);
+	console.log('');
+},500)

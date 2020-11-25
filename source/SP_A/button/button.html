@@ -11,8 +11,8 @@
 	<div class="dropdown">
 		<button onclick="dropdown()" class="dropbtn">Addons</button>
 		<div id="myDropdown" class="dropdown-content">
-			<button class="button" id="automation" onclick="(automationrunning==1)?automationrunning=0:automationrunning=1;">Automation</button>
-			<button class="button" id="soundpackage" onclick="(soundpackagerunning==1)?soundpackagerunning=0:soundpackagerunning=1;">Sound Package</button>
+			<button class="button" id="automation" onclick="if(automationrunning==0){automationrunning=1}else{automationrunning=0}">Automation</button>
+			<button class="button" id="soundpackage" onclick="if(soundpackagerunning==0){soundpackagerunning=1}else{soundpackagerunning=0}">Sound Package</button>
 		</div>
 	</div>
 	<script src="./button.min.js" charset="utf-8"></script>

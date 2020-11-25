@@ -19,6 +19,7 @@ window.onclick = function (n)
 }
 if (automationrunning = 1)
 {
+	console.log("automation");
 	document.getElementById("automation").classList.add("running")
 }
 else
@@ -27,6 +28,7 @@ else
 }
 if (soundpackagerunning = 1)
 {
+	console.log("soundpackage");
 	document.getElementById("soundpackage").classList.add("running")
 }
 else

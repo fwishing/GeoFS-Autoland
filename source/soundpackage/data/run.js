@@ -1,7 +1,11 @@
 function run() {
   initialize()
   sleep(5000).then(() => {
-    update()
+    setInterval(function() {
+      if (aid!=geofs.aircraft.instance.id) {
+        update()
+      }
+    },1000)
     soundpackage()
   });
 }

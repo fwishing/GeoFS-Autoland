@@ -1,45 +1,42 @@
 @import url(https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Text&display=swap);
 @import url(https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline+Text:wght@600&display=swap);
-#automation {
-  margin-bottom: 5px
-}
 
-#soundpackage {
-  margin-bottom: 5px
+.button_bottom {
+  margin-bottom: 3px;
 }
 
 .button {
   background-color: #3498DB;
   transition-duration: .4s;
-  color: #fff;
+  color: #FFFFFF;
   border: none;
   font-family: Big Shoulders Stencil Text;
   font-size: 20px
 }
 
 .button:hover {
-  background-color: #fff;
+  background-color: #FFFFFF;
   color: #3498DB
 }
 
 .running {
   background-color: #236a99;
   transition-duration: .4s;
-  color: #fff;
+  color: #FFFFFF;
   border: none;
   font-family: Big Shoulders Stencil Text;
   font-size: 20px
 }
 
 .running:hover {
-  background-color: #fff;
+  background-color: #FFFFFF;
   color: #3498DB
 }
 
 .dropbtn {
   background-color: #3cde95;
   font-family: Big Shoulders Inline Text;
-  color: #fff;
+  color: #FFFFFF;
   padding: 16px;
   font-size: 20px;
   border: none;
@@ -50,7 +47,7 @@
 
 .dropbtn:focus,
 .dropbtn:hover {
-  background-color: #fff;
+  background-color: #FFFFFF;
   color: #3cde95
 }
 

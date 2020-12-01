@@ -1,1 +1,2 @@
 var div = document.createElement("div");
+div.innerHTML = '<button class="button button_bottom" id="soundpackage" onclick="if(soundpackagerunning==0){soundpackagerunning=1}else{soundpackagerunning=0}">Sound Package</button><br><button class="button button_bottom" id="autoflaps" onclick="if(autoflapsrunning==0){autoflapsrunning=1}else{autoflapsrunning=0}">Autoflaps</button><br><button class="button button_bottom" id="autogear" onclick="if(autogearrunning==0){autogearrunning=1}else{autogearrunning=0}">Autogear</button>'
